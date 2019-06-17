@@ -2,7 +2,7 @@
 **Short Description:**
 * The Database (DB), tables and data were created using SQL with MSSQL Server -the scripts for doing this is contained in the file: **Data.txt**
 * A Data Access Layer was created using a Classlibrary project and EntityFramework (EF) Database first approach - the files
-**Members.cs** and **Center.cs** are used by EF for generating entities from the DB. **Model folder** -> **GymMembers.cs**, this class is used for building the objects before delivering them to the requester. 
+**Members.cs** and **Center.cs** are used by EF for generating entities from the DB. The class **GymMembers.cs** contained in  **Model folder**, is used for building the objects from the entities, before delivering them to the requester. 
 * The restful API for reading and writing to the database was created using an ASP.Net WebAPI project - this can be found in
   **Controller -> GymMembersController.cs** .
   
