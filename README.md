@@ -5,17 +5,21 @@
 **Members.cs** and **Center.cs** are used by EF for generating entities from the DB. **Model folder** -> **GymMembers.cs**, this class is used for building the objects before delivering them to the requester. 
 * The restful API for reading and writing to the database was created using an ASP.Net WebAPI project - this can be found in
   **Controller -> GymMembersController.cs** .
-
-* The services can be called via Postman or a web Browser.
+  
 
 * To return all the records from the DB *
   Example: <http://localhost:53410/api/members/>
-* To return only one record from the DB *  
+  
+* To return only one record from the DB *
   Example:<http://localhost:53410/api/members/24>
+  
 * To update an existing record with the ID *
   Example: <http://localhost:53410/api/members/24>
+  
 * To delete a record with the ID 24
   Example:<http://localhost:53410/api/members/24>
+  
 * To create a new object with the given parameters and save it in the DB *.
   Example:<http://localhost:portNumber/api/members/>  
 
+* The services can be called via Postman or a Web Browser.
