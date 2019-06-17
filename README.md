@@ -7,19 +7,19 @@
   **Controller -> GymMembersController.cs** .
   
 
-* To return all the records from the DB *
+* To return all the records from the DB
   Example: <http://localhost:53410/api/members/>
   
-* To return only one record from the DB *
+* To return only one record from the DB 
   Example:<http://localhost:53410/api/members/24>
   
-* To update an existing record with the ID *
+* To update an existing record with the ID
   Example: <http://localhost:53410/api/members/24>
   
 * To delete a record with the ID 24
   Example:<http://localhost:53410/api/members/24>
   
-* To create a new object with the given parameters and save it in the DB *.
+* To create a new object with the given parameters and save it in the DB.
   Example:<http://localhost:portNumber/api/members/>  
 
 * The services can be called via Postman or a Web Browser.
