@@ -1,0 +1,47 @@
+ CREATE DATABASE GymMembership;
+
+ USE  GymMembership;
+ 
+ CREATE TABLE Center(
+   CENTER_ID INT NOT NULL IDENTITY(100,1) PRIMARY KEY,
+   CENTER_NAME VARCHAR (30) NOT NULL,
+   CENTER_PHONE VARCHAR (20) NOT NULL);
+
+ CREATE TABLE Member(
+   MEMBER_ID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+   FIRSTNAME VARCHAR (30) NOT NULL,
+   LASTNAME VARCHAR (30) NOT NULL,
+   PHONE VARCHAR (20),
+   EMAIL VARCHAR (40) NOT NULL,
+   CITY VARCHAR (20),
+   CENTER_ID INT FOREIGN KEY REFERENCES Center(CENTER_ID));
+
+INSERT INTO Center(CENTER_NAME,CENTER_PHONE) 
+VALUES 
+('Gug Vej', '235689543'), 
+('Dannebrogsgade', '394956331'),
+('Eternitten', '546987231'),
+('Friis', '678989543'), 
+('Kennedy Plads', '123456331'),
+('Grønlands Torv', '598787231'),
+('Vesterbro', '123456331'),
+('Langagervej', '598787231')
+
+
+INSERT INTO Member(FIRSTNAME,LASTNAME,PHONE,EMAIL,CITY,CENTER_ID) 
+VALUES 
+('Dora', 'Reily','567890234', 'dora@mail.com', 'Aalborg', 107), 
+('Lars', 'Jorgensen', '123456789', 'lars@mail.com', 'Gug', 100),
+('Randi', 'Erichsen', '765432789', 'ral@mail.com', 'Skalborg', 101),
+('Vivi', 'Andersen','987234234', 'viv@mail.com', 'Gug', 102), 
+('Henrik', 'Jensen', '567890123', 'henr@mail.com', 'Vigor', 103),
+('Betinna', 'Gunner', '234156789', 'begu@mail.com', 'Nørresundby', 104),
+('Daisy', 'Andersen','321567093', 'daia@mail.com', 'Aalborg', 105), 
+('Serena', 'Gabriels', '789123454', 'serg@mail.com', 'Hasseries', 106),
+('Birgitte', 'Laursen', '342178977', 'bila@mail.com', 'Vestbyen', 107),
+('Morgens', 'Albert','201233566', 'moal@mail.com', 'Nibe', 100), 
+('Karina', 'Philips', '789906643', 'kaph@mail.com', 'Nørresundby', 101),
+('Mike', 'Olesen', '678432799', 'miol@mail.com', 'Vestbyen', 102),
+('Vibeke', 'Daniels','234178900', 'vida@mail.com', 'Hasseries', 103), 
+('Anders', 'William', '123456789', 'anwi@mail.com', 'Gug', 104),
+('John', 'Doe', '568990356', 'jdoe@mail.com', 'Aalborg', 105)
